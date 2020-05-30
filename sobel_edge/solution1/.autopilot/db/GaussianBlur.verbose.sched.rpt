@@ -1,0 +1,115 @@
+
+
+================================================================
+== Vivado HLS Report for 'GaussianBlur'
+================================================================
+* Date:           Fri May 29 14:36:55 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        sobel_edge
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.911|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2083934|  2083934|  2083934|  2083934|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "call fastcc void @Filter2D.1(i8* %p_src_data_stream_V, i8* %p_dst_data_stream_V)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2678->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2688]   --->   Operation 3 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %p_dst_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str328, i32 0, i32 0, [1 x i8]* @p_str329, [1 x i8]* @p_str330, [1 x i8]* @p_str331, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str332, [1 x i8]* @p_str333)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %p_src_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str321, i32 0, i32 0, [1 x i8]* @p_str322, [1 x i8]* @p_str323, [1 x i8]* @p_str324, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str325, [1 x i8]* @p_str326)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "call fastcc void @Filter2D.1(i8* %p_src_data_stream_V, i8* %p_dst_data_stream_V)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2678->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2688]   --->   Operation 6 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "ret void" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2689]   --->   Operation 7 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

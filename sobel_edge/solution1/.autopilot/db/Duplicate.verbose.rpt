@@ -1,0 +1,1049 @@
+
+
+================================================================
+== Vivado HLS Report for 'Duplicate'
+================================================================
+* Date:           Fri May 29 14:37:04 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        sobel_edge
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.334|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2076841|  2076841|  2076841|  2076841|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |      Latency      | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_height  |  2076840|  2076840|      1923|          -|          -|  1080|    no    |
+        | + loop_width  |     1920|     1920|         2|          1|          1|  1920|    yes   |
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     72|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    105|    -|
+|Register         |        -|      -|      42|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      42|    177|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      432|    360|  141120|  70560|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_V_fu_142_p2                     |     +    |      0|  0|  18|          11|           1|
+    |j_V_fu_154_p2                     |     +    |      0|  0|  18|          11|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln1557_fu_136_p2             |   icmp   |      0|  0|  13|          11|          11|
+    |icmp_ln1558_fu_148_p2             |   icmp   |      0|  0|  13|          11|           9|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  72|          50|          28|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |  27|          5|    1|          5|
+    |ap_done                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1   |  15|          3|    1|          3|
+    |dst1_data_stream_V_blk_n  |   9|          2|    1|          2|
+    |dst2_data_stream_V_blk_n  |   9|          2|    1|          2|
+    |real_start                |   9|          2|    1|          2|
+    |src_data_stream_V_blk_n   |   9|          2|    1|          2|
+    |t_V_3_reg_125             |   9|          2|   11|         22|
+    |t_V_reg_114               |   9|          2|   11|         22|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     | 105|         22|   29|         62|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_V_reg_164              |  11|   0|   11|          0|
+    |icmp_ln1558_reg_169      |   1|   0|    1|          0|
+    |start_once_reg           |   1|   0|    1|          0|
+    |t_V_3_reg_125            |  11|   0|   11|          0|
+    |t_V_reg_114              |  11|   0|   11|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  42|   0|   42|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+--------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++---------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                     |  in |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_rst                     |  in |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |      Duplicate     | return value |
+|start_full_n               |  in |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_continue                |  in |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |      Duplicate     | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |      Duplicate     | return value |
+|start_out                  | out |    1| ap_ctrl_hs |      Duplicate     | return value |
+|start_write                | out |    1| ap_ctrl_hs |      Duplicate     | return value |
+|src_data_stream_V_dout     |  in |    8|   ap_fifo  |  src_data_stream_V |    pointer   |
+|src_data_stream_V_empty_n  |  in |    1|   ap_fifo  |  src_data_stream_V |    pointer   |
+|src_data_stream_V_read     | out |    1|   ap_fifo  |  src_data_stream_V |    pointer   |
+|dst1_data_stream_V_din     | out |    8|   ap_fifo  | dst1_data_stream_V |    pointer   |
+|dst1_data_stream_V_full_n  |  in |    1|   ap_fifo  | dst1_data_stream_V |    pointer   |
+|dst1_data_stream_V_write   | out |    1|   ap_fifo  | dst1_data_stream_V |    pointer   |
+|dst2_data_stream_V_din     | out |    8|   ap_fifo  | dst2_data_stream_V |    pointer   |
+|dst2_data_stream_V_full_n  |  in |    1|   ap_fifo  | dst2_data_stream_V |    pointer   |
+|dst2_data_stream_V_write   | out |    1|   ap_fifo  | dst2_data_stream_V |    pointer   |
++---------------------------+-----+-----+------------+--------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 5 4 
+4 --> 3 
+5 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.75>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %dst2_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str342, i32 0, i32 0, [1 x i8]* @p_str343, [1 x i8]* @p_str344, [1 x i8]* @p_str345, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str346, [1 x i8]* @p_str347)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %dst1_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str335, i32 0, i32 0, [1 x i8]* @p_str336, [1 x i8]* @p_str337, [1 x i8]* @p_str338, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str339, [1 x i8]* @p_str340)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %src_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str328, i32 0, i32 0, [1 x i8]* @p_str329, [1 x i8]* @p_str330, [1 x i8]* @p_str331, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str332, [1 x i8]* @p_str333)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.75ns)   --->   "br label %0" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.75>
+
+State 2 <SV = 1> <Delay = 1.19>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%t_V = phi i11 [ 0, %._crit_edge ], [ %i_V, %loop_height_end ]"   --->   Operation 10 'phi' 't_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.85ns)   --->   "%icmp_ln1557 = icmp eq i11 %t_V, -968" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 11 'icmp' 'icmp_ln1557' <Predicate = true> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1080, i64 1080, i64 1080)"   --->   Operation 12 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.94ns)   --->   "%i_V = add i11 %t_V, 1" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 13 'add' 'i_V' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %icmp_ln1557, label %2, label %loop_height_begin" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 14 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str9) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 15 'specloopname' <Predicate = (!icmp_ln1557)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str9)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 16 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln1557)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.75ns)   --->   "br label %1" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 17 'br' <Predicate = (!icmp_ln1557)> <Delay = 0.75>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "ret void" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1566]   --->   Operation 18 'ret' <Predicate = (icmp_ln1557)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.94>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%t_V_3 = phi i11 [ 0, %loop_height_begin ], [ %j_V, %loop_width_begin ]"   --->   Operation 19 'phi' 't_V_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.85ns)   --->   "%icmp_ln1558 = icmp eq i11 %t_V_3, -128" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 20 'icmp' 'icmp_ln1558' <Predicate = true> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1920, i64 1920, i64 1920)"   --->   Operation 21 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.94ns)   --->   "%j_V = add i11 %t_V_3, 1" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 22 'add' 'j_V' <Predicate = true> <Delay = 0.94> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %icmp_ln1558, label %loop_height_end, label %loop_width_begin" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 4.33>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str10) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 24 'specloopname' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str10)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 25 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1560]   --->   Operation 26 'specpipeline' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str20)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:672->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1561]   --->   Operation 27 'specregionbegin' 'tmp_3' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:676->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1561]   --->   Operation 28 'specprotocol' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (2.16ns)   --->   "%tmp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %src_data_stream_V)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:679->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1561]   --->   Operation 29 'read' 'tmp' <Predicate = (!icmp_ln1558)> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str20, i32 %tmp_3)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:681->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1561]   --->   Operation 30 'specregionend' 'empty' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str23)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:696->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1562]   --->   Operation 31 'specregionbegin' 'tmp_4' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:700->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1562]   --->   Operation 32 'specprotocol' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (2.16ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %dst1_data_stream_V, i8 %tmp)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:703->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1562]   --->   Operation 33 'write' <Predicate = (!icmp_ln1558)> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%empty_98 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str23, i32 %tmp_4)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:705->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1562]   --->   Operation 34 'specregionend' 'empty_98' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_5 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str23)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:696->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1563]   --->   Operation 35 'specregionbegin' 'tmp_5' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:700->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1563]   --->   Operation 36 'specprotocol' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (2.16ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %dst2_data_stream_V, i8 %tmp)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:703->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1563]   --->   Operation 37 'write' <Predicate = (!icmp_ln1558)> <Delay = 2.16> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%empty_99 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str23, i32 %tmp_5)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:705->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717->C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1563]   --->   Operation 38 'specregionend' 'empty_99' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%empty_100 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str10, i32 %tmp_2)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1564]   --->   Operation 39 'specregionend' 'empty_100' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "br label %1" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1558]   --->   Operation 40 'br' <Predicate = (!icmp_ln1558)> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%empty_101 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str9, i32 %tmp_s)" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1565]   --->   Operation 41 'specregionend' 'empty_101' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "br label %0" [C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_arithm.h:1557]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ src_data_stream_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ dst1_data_stream_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ dst2_data_stream_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specinterface_ln0     (specinterface    ) [ 000000]
+specinterface_ln0     (specinterface    ) [ 000000]
+specinterface_ln0     (specinterface    ) [ 000000]
+br_ln1557             (br               ) [ 011111]
+t_V                   (phi              ) [ 001000]
+icmp_ln1557           (icmp             ) [ 001111]
+speclooptripcount_ln0 (speclooptripcount) [ 000000]
+i_V                   (add              ) [ 011111]
+br_ln1557             (br               ) [ 000000]
+specloopname_ln1557   (specloopname     ) [ 000000]
+tmp_s                 (specregionbegin  ) [ 000111]
+br_ln1558             (br               ) [ 001111]
+ret_ln1566            (ret              ) [ 000000]
+t_V_3                 (phi              ) [ 000100]
+icmp_ln1558           (icmp             ) [ 001111]
+speclooptripcount_ln0 (speclooptripcount) [ 000000]
+j_V                   (add              ) [ 001111]
+br_ln1558             (br               ) [ 000000]
+specloopname_ln1558   (specloopname     ) [ 000000]
+tmp_2                 (specregionbegin  ) [ 000000]
+specpipeline_ln1560   (specpipeline     ) [ 000000]
+tmp_3                 (specregionbegin  ) [ 000000]
+specprotocol_ln676    (specprotocol     ) [ 000000]
+tmp                   (read             ) [ 000000]
+empty                 (specregionend    ) [ 000000]
+tmp_4                 (specregionbegin  ) [ 000000]
+specprotocol_ln700    (specprotocol     ) [ 000000]
+write_ln703           (write            ) [ 000000]
+empty_98              (specregionend    ) [ 000000]
+tmp_5                 (specregionbegin  ) [ 000000]
+specprotocol_ln700    (specprotocol     ) [ 000000]
+write_ln703           (write            ) [ 000000]
+empty_99              (specregionend    ) [ 000000]
+empty_100             (specregionend    ) [ 000000]
+br_ln1558             (br               ) [ 001111]
+empty_101             (specregionend    ) [ 000000]
+br_ln1557             (br               ) [ 011111]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="src_data_stream_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="src_data_stream_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="dst1_data_stream_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dst1_data_stream_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="dst2_data_stream_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dst2_data_stream_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str342"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str343"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str344"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str345"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str346"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str347"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str335"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str336"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str337"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str338"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str339"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str340"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str328"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str329"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str330"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str331"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str332"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str333"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecRegionBegin"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1001" name="const_76">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1001" name="const_78">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str20"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1001" name="const_82">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecProtocol"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1001" name="const_84">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_fifo.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1001" name="const_86">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecRegionEnd"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1001" name="const_88">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str23"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1001" name="const_90">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1004" name="tmp_read_fu_92">
+<pin_list>
+<pin id="93" dir="0" index="0" bw="8" slack="0"/>
+<pin id="94" dir="0" index="1" bw="8" slack="0"/>
+<pin id="95" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tmp/4 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="write_ln703_write_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="0" slack="0"/>
+<pin id="100" dir="0" index="1" bw="8" slack="0"/>
+<pin id="101" dir="0" index="2" bw="8" slack="0"/>
+<pin id="102" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln703/4 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="write_ln703_write_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="0" slack="0"/>
+<pin id="108" dir="0" index="1" bw="8" slack="0"/>
+<pin id="109" dir="0" index="2" bw="8" slack="0"/>
+<pin id="110" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln703/4 "/>
+</bind>
+</comp>
+
+<comp id="114" class="1005" name="t_V_reg_114">
+<pin_list>
+<pin id="115" dir="0" index="0" bw="11" slack="1"/>
+<pin id="116" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="t_V (phireg) "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="t_V_phi_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="1" slack="1"/>
+<pin id="120" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="121" dir="0" index="2" bw="11" slack="0"/>
+<pin id="122" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="123" dir="1" index="4" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="t_V/2 "/>
+</bind>
+</comp>
+
+<comp id="125" class="1005" name="t_V_3_reg_125">
+<pin_list>
+<pin id="126" dir="0" index="0" bw="11" slack="1"/>
+<pin id="127" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="t_V_3 (phireg) "/>
+</bind>
+</comp>
+
+<comp id="129" class="1004" name="t_V_3_phi_fu_129">
+<pin_list>
+<pin id="130" dir="0" index="0" bw="1" slack="1"/>
+<pin id="131" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="132" dir="0" index="2" bw="11" slack="0"/>
+<pin id="133" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="134" dir="1" index="4" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="t_V_3/3 "/>
+</bind>
+</comp>
+
+<comp id="136" class="1004" name="icmp_ln1557_fu_136">
+<pin_list>
+<pin id="137" dir="0" index="0" bw="11" slack="0"/>
+<pin id="138" dir="0" index="1" bw="11" slack="0"/>
+<pin id="139" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln1557/2 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="i_V_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="11" slack="0"/>
+<pin id="144" dir="0" index="1" bw="1" slack="0"/>
+<pin id="145" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="i_V/2 "/>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="icmp_ln1558_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="11" slack="0"/>
+<pin id="150" dir="0" index="1" bw="11" slack="0"/>
+<pin id="151" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln1558/3 "/>
+</bind>
+</comp>
+
+<comp id="154" class="1004" name="j_V_fu_154">
+<pin_list>
+<pin id="155" dir="0" index="0" bw="11" slack="0"/>
+<pin id="156" dir="0" index="1" bw="1" slack="0"/>
+<pin id="157" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="j_V/3 "/>
+</bind>
+</comp>
+
+<comp id="160" class="1005" name="icmp_ln1557_reg_160">
+<pin_list>
+<pin id="161" dir="0" index="0" bw="1" slack="1"/>
+<pin id="162" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln1557 "/>
+</bind>
+</comp>
+
+<comp id="164" class="1005" name="i_V_reg_164">
+<pin_list>
+<pin id="165" dir="0" index="0" bw="11" slack="0"/>
+<pin id="166" dir="1" index="1" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opset="i_V "/>
+</bind>
+</comp>
+
+<comp id="169" class="1005" name="icmp_ln1558_reg_169">
+<pin_list>
+<pin id="170" dir="0" index="0" bw="1" slack="1"/>
+<pin id="171" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln1558 "/>
+</bind>
+</comp>
+
+<comp id="173" class="1005" name="j_V_reg_173">
+<pin_list>
+<pin id="174" dir="0" index="0" bw="11" slack="0"/>
+<pin id="175" dir="1" index="1" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opset="j_V "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="96"><net_src comp="84" pin="0"/><net_sink comp="92" pin=0"/></net>
+
+<net id="97"><net_src comp="0" pin="0"/><net_sink comp="92" pin=1"/></net>
+
+<net id="103"><net_src comp="90" pin="0"/><net_sink comp="98" pin=0"/></net>
+
+<net id="104"><net_src comp="2" pin="0"/><net_sink comp="98" pin=1"/></net>
+
+<net id="105"><net_src comp="92" pin="2"/><net_sink comp="98" pin=2"/></net>
+
+<net id="111"><net_src comp="90" pin="0"/><net_sink comp="106" pin=0"/></net>
+
+<net id="112"><net_src comp="4" pin="0"/><net_sink comp="106" pin=1"/></net>
+
+<net id="113"><net_src comp="92" pin="2"/><net_sink comp="106" pin=2"/></net>
+
+<net id="117"><net_src comp="52" pin="0"/><net_sink comp="114" pin=0"/></net>
+
+<net id="124"><net_src comp="114" pin="1"/><net_sink comp="118" pin=0"/></net>
+
+<net id="128"><net_src comp="52" pin="0"/><net_sink comp="125" pin=0"/></net>
+
+<net id="135"><net_src comp="125" pin="1"/><net_sink comp="129" pin=0"/></net>
+
+<net id="140"><net_src comp="118" pin="4"/><net_sink comp="136" pin=0"/></net>
+
+<net id="141"><net_src comp="54" pin="0"/><net_sink comp="136" pin=1"/></net>
+
+<net id="146"><net_src comp="118" pin="4"/><net_sink comp="142" pin=0"/></net>
+
+<net id="147"><net_src comp="60" pin="0"/><net_sink comp="142" pin=1"/></net>
+
+<net id="152"><net_src comp="129" pin="4"/><net_sink comp="148" pin=0"/></net>
+
+<net id="153"><net_src comp="68" pin="0"/><net_sink comp="148" pin=1"/></net>
+
+<net id="158"><net_src comp="129" pin="4"/><net_sink comp="154" pin=0"/></net>
+
+<net id="159"><net_src comp="60" pin="0"/><net_sink comp="154" pin=1"/></net>
+
+<net id="163"><net_src comp="136" pin="2"/><net_sink comp="160" pin=0"/></net>
+
+<net id="167"><net_src comp="142" pin="2"/><net_sink comp="164" pin=0"/></net>
+
+<net id="168"><net_src comp="164" pin="1"/><net_sink comp="118" pin=2"/></net>
+
+<net id="172"><net_src comp="148" pin="2"/><net_sink comp="169" pin=0"/></net>
+
+<net id="176"><net_src comp="154" pin="2"/><net_sink comp="173" pin=0"/></net>
+
+<net id="177"><net_src comp="173" pin="1"/><net_sink comp="129" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: dst1_data_stream_V | {4 }
+	Port: dst2_data_stream_V | {4 }
+ - Input state : 
+	Port: Duplicate : src_data_stream_V | {4 }
+  - Chain level:
+	State 1
+	State 2
+		icmp_ln1557 : 1
+		i_V : 1
+		br_ln1557 : 2
+	State 3
+		icmp_ln1558 : 1
+		j_V : 1
+		br_ln1558 : 2
+	State 4
+		empty : 1
+		empty_98 : 1
+		empty_99 : 1
+		empty_100 : 1
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------|---------|---------|
+| Operation|      Functional Unit     |    FF   |   LUT   |
+|----------|--------------------------|---------|---------|
+|    add   |        i_V_fu_142        |    0    |    18   |
+|          |        j_V_fu_154        |    0    |    18   |
+|----------|--------------------------|---------|---------|
+|   icmp   |    icmp_ln1557_fu_136    |    0    |    13   |
+|          |    icmp_ln1558_fu_148    |    0    |    13   |
+|----------|--------------------------|---------|---------|
+|   read   |      tmp_read_fu_92      |    0    |    0    |
+|----------|--------------------------|---------|---------|
+|   write  |  write_ln703_write_fu_98 |    0    |    0    |
+|          | write_ln703_write_fu_106 |    0    |    0    |
+|----------|--------------------------|---------|---------|
+|   Total  |                          |    0    |    62   |
+|----------|--------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|    i_V_reg_164    |   11   |
+|icmp_ln1557_reg_160|    1   |
+|icmp_ln1558_reg_169|    1   |
+|    j_V_reg_173    |   11   |
+|   t_V_3_reg_125   |   11   |
+|    t_V_reg_114    |   11   |
++-------------------+--------+
+|       Total       |   46   |
++-------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   62   |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |   46   |    -   |
++-----------+--------+--------+
+|   Total   |   46   |   62   |
++-----------+--------+--------+
