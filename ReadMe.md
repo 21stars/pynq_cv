@@ -1,1 +1,1 @@
-#PYNQ Image Processing with Ultra96
+# PYNQ Image Processing with Ultra96
