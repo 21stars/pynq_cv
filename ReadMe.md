@@ -1,9 +1,29 @@
-# PYNQ Image Processing with Ultra96v2
+# PYNQ Image/Video Processing with Ultra96v2
 
-## 1. INTRODUCTION
+## INTRODUCTION
 
-## 2. SYSTEM BLOCK DESIGN
+Image and Video Processing examples using PYNQ, HLS and RTL with Ultra96v2
 
-## 3. H/W DESIGN
+As an example of Image/Video Processing, [the Sobel Operator](https://en.wikipedia.org/wiki/Sobel_operator, "Sobel Operator") was used.
 
-## 4. S/W DESIGN
+System requirements
+-  [Vivado v2019.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html, "Vivado")
+-  [PYNQ Image v2.5](http://www.pynq.io/board.html, "PYNQ")
+- And of course an [Ultra96](http://zedboard.org/product/ultra96, "Ultra96") --> Ultra96v1 is fine if you specify your board as Ultra96v1 in Vivado Project and prepare PYNQ image of Ultra96v1
+
+### So What's Inside
+
+- VDMA Pass Through
+  - Vivado Project
+  - Jupyter Notebook
+  
+- HLS Image Processing
+  - Sobel Operator HLS Project
+  - Vivado Project
+  - Jupyter Notebook
+
+- HLS / RTL Video Processing
+  - Sobel Operator AXI4 Video Stream RTL IP
+  - Vivado Project
+  - Python Script
+  - Cute Ahri's Video
