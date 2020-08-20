@@ -4,16 +4,17 @@
 
 Image and Video Processing examples using PYNQ, HLS and RTL with Ultra96v2
 
-As an example of Image/Video Processing, [the Sobel Operator](https://en.wikipedia.org/wiki/Sobel_operator, "Sobel Operator") was used.
+As an example of Image/Video Processing, the [Sobel Operator](https://en.wikipedia.org/wiki/Sobel_operator "Sobel Operator") was used.
 
 System requirements
--  [Vivado v2019.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html, "Vivado")
--  [PYNQ Image v2.5](http://www.pynq.io/board.html, "PYNQ")
-- And of course an [Ultra96](http://zedboard.org/product/ultra96, "Ultra96") --> Ultra96v1 is fine if you specify your board as Ultra96v1 in Vivado Project and prepare PYNQ image of Ultra96v1
+-  [Vivado v2019.1](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html "Vivado")
+-  [PYNQ Image v2.5](http://www.pynq.io/board.html "PYNQ")
+- And of course an [Ultra96](http://zedboard.org/product/ultra96 "Ultra96") --> Ultra96v1 is fine if you specify your board as Ultra96v1 in Vivado Project and prepare PYNQ image of Ultra96v1
+- [Ultra96 Board File](https://github.com/Avnet/bdf "Ultra96 Board File") You should check which version your Ultra96 is
 
 ### So What's Inside
 
-- [VDMA Pass Through]()
+- [VDMA Pass Through](1.VDMA_PASS_THROUGH "VDMA PASS THROUGH")
   - Vivado Project
   - Jupyter Notebook
   
