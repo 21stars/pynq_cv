@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 16 15:41:54 2020
+# Process ID: 470020
+# Current directory: C:/work/zynq/hls/base_projects/vdma_pass_thrugh
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent470452 C:\work\zynq\hls\base_projects\vdma_pass_thrugh\vdma_pass_thrugh.xpr
+# Log file: C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vivado.log
+# Journal file: C:/work/zynq/hls/base_projects/vdma_pass_thrugh\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/design_1.bd}

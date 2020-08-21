@@ -1,0 +1,57 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sobel_accel'" level="0">
+<item name = "Date">Wed Jun  3 20:20:38 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">sobel_edge</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.544, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2083943, 2099539, 2083935, 2099522, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_AddWeighted_fu_550">AddWeighted, 1, 2099521, 1, 2099521, none</column>
+<column name="grp_ConvertScaleAbs273_fu_561">ConvertScaleAbs273, 2083321, 2083321, 2083321, 2083321, none</column>
+<column name="grp_ConvertScaleAbs_fu_567">ConvertScaleAbs, 2083321, 2083321, 2083321, 2083321, none</column>
+<column name="grp_Sobel_fu_573">Sobel, 2083934, 2083934, 2083934, 2083934, none</column>
+<column name="grp_Sobel_1_fu_579">Sobel_1, 2083934, 2083934, 2083934, 2083934, none</column>
+<column name="grp_GaussianBlur_fu_585">GaussianBlur, 2083934, 2083934, 2083934, 2083934, none</column>
+<column name="grp_AXIvideo2Mat_fu_591">AXIvideo2Mat, 3, 2079003, 3, 2079003, none</column>
+<column name="grp_CvtColor_1_fu_616">CvtColor_1, 1, 2077921, 1, 2077921, none</column>
+<column name="grp_Mat2AXIvideo_fu_626">Mat2AXIvideo, 2077921, 2077921, 2077921, 2077921, none</column>
+<column name="grp_CvtColor_fu_647">CvtColor, 1, 2076841, 1, 2076841, none</column>
+<column name="grp_Duplicate_fu_657">Duplicate, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="call_ln0_Block_proc_fu_664">Block_proc, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

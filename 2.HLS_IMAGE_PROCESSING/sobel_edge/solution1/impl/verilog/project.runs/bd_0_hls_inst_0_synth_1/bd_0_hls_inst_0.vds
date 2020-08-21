@@ -1,0 +1,1591 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun  3 20:21:54 2020
+# Process ID: 38612
+# Current directory: C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top bd_0_hls_inst_0 -part xczu3eg-sbva484-1-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 38776 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1272.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel.v:12]
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_CONTROL_BUS_s_axi' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_CONTROL_BUS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_CONTROL_BUS_s_axi.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_CONTROL_BUS_s_axi' (1#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_CONTROL_BUS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Block_proc.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (2#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (3#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor_1' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mbkb' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mbkb.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mbkb_DSP48_0' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mbkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mbkb_DSP48_0' (4#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mbkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mbkb' (5#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mbkb.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mul_mcud' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mcud.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 22 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mul_mcud_DSP48_1' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mcud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mul_mcud_DSP48_1' (6#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mcud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mul_mcud' (7#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mcud.v:13]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mdEe' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mdEe.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 23 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mdEe_DSP48_2' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mdEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mdEe_DSP48_2' (8#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mdEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mdEe' (9#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mdEe.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor_1.v:583]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor_1' (10#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'GaussianBlur' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/GaussianBlur.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/GaussianBlur.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_eOg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1_k_buf_eOg.v:50]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_eOg_ram' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1_k_buf_eOg.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1_k_buf_eOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_eOg_ram' (11#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1_k_buf_eOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_eOg' (12#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1_k_buf_eOg.v:50]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mux_3hbi' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mux_3hbi.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mux_3hbi' (13#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mux_3hbi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_ama_aibs' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_ama_aibs.v:36]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_ama_aibs_DSP48_3' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_ama_aibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_ama_aibs_DSP48_3' (14#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_ama_aibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_ama_aibs' (15#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_ama_aibs.v:36]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mul_mjbC' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mjbC.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 14 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mul_mjbC_DSP48_4' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mjbC.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mul_mjbC_DSP48_4' (16#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mjbC.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mul_mjbC' (17#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mul_mjbC.v:13]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mkbM' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mkbM.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 21 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mkbM_DSP48_5' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mkbM.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mkbM_DSP48_5' (18#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mkbM.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mkbM' (19#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mkbM.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mlbW' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mlbW.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mlbW_DSP48_6' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mlbW.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mlbW_DSP48_6' (20#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mlbW.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mlbW' (21#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mlbW.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1017]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1111]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1113]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1119]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1163]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1165]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1167]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:1229]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1' (22#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'GaussianBlur' (23#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/GaussianBlur.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Duplicate' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Duplicate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Duplicate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Duplicate' (24#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Duplicate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Sobel' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:61]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:252]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:259]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mpcA' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mpcA.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 2 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mpcA_DSP48_7' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mpcA.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mpcA_DSP48_7' (25#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mpcA.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mpcA' (26#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mpcA.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mqcK' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mqcK.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 2 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mqcK_DSP48_8' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mqcK.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mqcK_DSP48_8' (27#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mqcK.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mqcK' (28#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mqcK.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mrcU' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mrcU.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 3 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_mrcU_DSP48_9' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mrcU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mrcU_DSP48_9' (29#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mrcU.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_mrcU' (30#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_mrcU.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_msc4' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_msc4.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 4 - type: integer 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mac_msc4_DSP48_10' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_msc4.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_msc4_DSP48_10' (31#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_msc4.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mac_msc4' (32#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_mac_msc4.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1043]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1045]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1047]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1149]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1151]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1153]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1155]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1157]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1159]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1161]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1163]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1165]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1167]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1169]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1171]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1197]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1199]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1201]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1253]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D' (33#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel' (34#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Sobel_1' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel_1.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel_1' (35#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Sobel_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ConvertScaleAbs273' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state11 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:52]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_sitodtde' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_sitodtde.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_accel_ap_sitodp_2_no_dsp_32' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_sitodp_2_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_sitodp_2_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'sobel_accel_ap_sitodp_2_no_dsp_32' (49#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_sitodp_2_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_sitodtde' (50#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_sitodtde.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:512]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:610]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:668]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:672]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:682]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:686]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:688]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:690]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:692]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:694]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:696]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:698]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:700]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:702]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:704]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:726]
+INFO: [Synth 8-6155] done synthesizing module 'ConvertScaleAbs273' (51#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ConvertScaleAbs' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state11 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:52]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:512]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:610]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:668]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:672]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:682]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:686]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:688]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:690]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:692]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:694]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:696]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:698]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:700]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:702]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:704]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:726]
+INFO: [Synth 8-6155] done synthesizing module 'ConvertScaleAbs' (52#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AddWeighted' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state26 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:95]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_dadd_udo' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_dadd_udo.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_accel_ap_dadd_3_full_dsp_64' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dadd_3_full_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dadd_3_full_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'sobel_accel_ap_dadd_3_full_dsp_64' (68#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dadd_3_full_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_dadd_udo' (69#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_dadd_udo.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_dmul_vdy' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_dmul_vdy.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_accel_ap_dmul_3_max_dsp_64' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dmul_3_max_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dmul_3_max_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'sobel_accel_ap_dmul_3_max_dsp_64' (77#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_dmul_3_max_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_dmul_vdy' (78#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_dmul_vdy.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_uitodwdI' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_uitodwdI.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sobel_accel_ap_uitodp_2_no_dsp_32' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_uitodp_2_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at 'c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_uitodp_2_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'sobel_accel_ap_uitodp_2_no_dsp_32' (80#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/ip/sobel_accel_ap_uitodp_2_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_uitodwdI' (81#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel_uitodwdI.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1087]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1233]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1237]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1315]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1319]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1321]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1327]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1335]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1337]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1339]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1341]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1343]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1345]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1347]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1349]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1351]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1353]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1355]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:1393]
+INFO: [Synth 8-6155] done synthesizing module 'AddWeighted' (82#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/AddWeighted.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor' (83#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/CvtColor.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:252]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:278]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:304]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:366]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (84#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d2_A_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A_shiftReg' (85#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d2_A' (86#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d8_A' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d8_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w12_d8_A_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d8_A.v:8]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d8_A_shiftReg' (87#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d8_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w12_d8_A' (88#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d8_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w8_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w8_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (89#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (90#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w16_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w16_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A_shiftReg' (91#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A' (92#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigxdS' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_AddWeigxdS.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigxdS_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_AddWeigxdS.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigxdS_shiftReg' (93#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_AddWeigxdS.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigxdS' (94#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_AddWeigxdS.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoyd2' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoyd2.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoyd2_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoyd2.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoyd2_shiftReg' (95#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoyd2.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoyd2' (96#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoyd2.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Gaussiazec' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Gaussiazec.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Gaussiazec_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Gaussiazec.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Gaussiazec_shiftReg' (97#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Gaussiazec.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Gaussiazec' (98#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Gaussiazec.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicaAem' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_DuplicaAem.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicaAem_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_DuplicaAem.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicaAem_shiftReg' (99#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_DuplicaAem.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicaAem' (100#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_DuplicaAem.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_U0' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_U0_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_U0_shiftReg' (101#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_U0' (102#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_1Bew' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_1Bew.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_1Bew_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_1Bew.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_1Bew_shiftReg' (103#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_1Bew.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_1Bew' (104#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Sobel_1Bew.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_ConvertCeG' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertCeG.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_ConvertCeG_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertCeG.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ConvertCeG_shiftReg' (105#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertCeG.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ConvertCeG' (106#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertCeG.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_ConvertDeQ' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertDeQ.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_ConvertDeQ_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertDeQ.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ConvertDeQ_shiftReg' (107#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertDeQ.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ConvertDeQ' (108#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_ConvertDeQ.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoEe0' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoEe0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoEe0_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoEe0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoEe0_shiftReg' (109#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoEe0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoEe0' (110#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_CvtColoEe0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIFfa' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Mat2AXIFfa.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIFfa_shiftReg' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Mat2AXIFfa.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIFfa_shiftReg' (111#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Mat2AXIFfa.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIFfa' (112#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_Mat2AXIFfa.v:42]
+WARNING: [Synth 8-6014] Unused sequential element AXIvideo2Mat_U0_ap_ready_count_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel.v:1184]
+WARNING: [Synth 8-6014] Unused sequential element Block_proc_U0_ap_ready_count_reg was removed.  [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel.v:1192]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel' (113#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/sobel_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (114#1) [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized120 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized120 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized120 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized120 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized120 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[10]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[9]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[8]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized15 has unconnected port B[63]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[62]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[61]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[60]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[59]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[58]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[57]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[56]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[55]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[54]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[53]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[52]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[51]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[50]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[49]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[48]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[47]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[46]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[45]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[44]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[43]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[42]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[41]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[40]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[39]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[38]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[37]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[36]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[35]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[34]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[33]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[32]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp__parameterized0 has unconnected port A[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1408.320 ; gain = 135.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1430.156 ; gain = 157.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1430.156 ; gain = 157.684
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1622 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sobel_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sobel_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1579.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 8 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 14 instances
+  FDE => FDRE: 10 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.288 . Memory (MB): peak = 1579.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.824 ; gain = 307.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.824 ; gain = 307.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1579.824 ; gain = 307.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sobel_accel_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sobel_accel_CONTROL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1486_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1480_reg[10:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:589]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1492_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1480_reg[10:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D_1.v:590]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1467_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1461_reg[10:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:597]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1473_reg[10:0]' into 'k_buf_0_val_3_addr_reg_1461_reg[10:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:598]
+INFO: [Synth 8-4471] merging register 'zext_ln1118_5_reg_1378_reg[10:3]' into 'zext_ln1118_4_reg_1368_reg[11:4]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:1125]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_assign_reg_853_reg' and it is trimmed from '64' to '63' bits. [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs273.v:394]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_assign_reg_853_reg' and it is trimmed from '64' to '63' bits. [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/ConvertScaleAbs.v:394]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/fifo_w12_d8_A.v:90]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/start_for_AddWeigxdS.v:90]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sobel_accel_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'sobel_accel_CONTROL_BUS_s_axi'
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"Filter2D_1_k_buf_eOg_ram:/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "Filter2D_1_k_buf_eOg_ram:/ram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 1579.824 ; gain = 307.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized13) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized13) to 'sobel_accel_sitodtde:/sobel_accel_ap_sitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized8) to 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'sobel_accel_dadd_udo:/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized8) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized13) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized13) to 'sobel_accel_dmul_vdy:/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized13) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized13) to 'sobel_accel_uitodwdI:/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2:0]' into 'grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:650]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/sext_ln1118_3_reg_1373_reg[9:0]' into 'grp_Filter2D_fu_52/sext_ln1118_3_reg_1373_reg[9:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:647]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:672]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:672]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_144_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_144_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:656]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2:0]' into 'grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:650]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/sext_ln1118_3_reg_1373_reg[9:0]' into 'grp_Filter2D_fu_52/sext_ln1118_3_reg_1373_reg[9:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:647]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:672]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:672]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_144_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_144_reg[7:0]' [c:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/680c/hdl/verilog/Filter2D.v:656]
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg"
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\sobel_accel_uitodwdI_U92/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\sobel_accel_uitodwdI_U91/sobel_accel_ap_uitodp_2_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/din0_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/din0_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[63]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[63]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U92/ce_r_reg' (FD) to 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/ce_r_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_uitodwdI_U91/ce_r_reg' (FD) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/ce_r_reg'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[52]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[53]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[54]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[54]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[55]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[56]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[57]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[57]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[58]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[58]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[59]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[59]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[60]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[60]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[61]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[61]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[53]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[62]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[0]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[1]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[2]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[3]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[4]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[5]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[6]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[7]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[8]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[9]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[10]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[11]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[12]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[13]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[14]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[15]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[16]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[17]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[18]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[19]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[20]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[21]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[22]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[23]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[24]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[25]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[26]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[27]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[28]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[29]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[30]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[31]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[32]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[33]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[34]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/din1_buf1_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[58]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[53]'
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[59]' (FDE) to 'inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/din1_buf1_reg[53]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/\sobel_accel_dmul_vdy_U89/din1_buf1_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\sobel_accel_dadd_udo_U88/din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Sobel_1_U0/\grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_1_U0/\grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Sobel_U0/\grp_Filter2D_fu_52/sext_ln1118_3_reg_1373_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_U0/\grp_Filter2D_fu_52/zext_ln1118_5_reg_1378_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ConvertScaleAbs273_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ConvertScaleAbs_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Duplicate_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/GaussianBlur_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Mat2AXIvideo_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel_accel_CONTROL_BUS_s_axi_U/\rdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[51] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module sobel_accel_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module sobel_accel_CONTROL_BUS_s_axi.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_cols_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_rows_V_c_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_cols_V_c27_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_cols_V_c27_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_rows_V_c26_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_rows_V_c26_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AXIvideo2Mat_U0/\rows_V_reg_465_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/\rows_V_reg_465_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_cols_V_c27_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_cols_V_c27_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/src_rows_V_c26_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/src_rows_V_c26_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/CvtColor_1_U0/\p_src_rows_V_read_reg_353_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_1_U0/\p_src_rows_V_read_reg_353_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel_g_cols_V_c29_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel_g_rows_V_c28_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/\rows_V_reg_1074_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel_g_cols_V_c29_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel_g_rows_V_c28_U/\U_fifo_w12_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/\p_src_rows_V_read_reg_233_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:53 . Memory (MB): peak = 1657.660 ; gain = 385.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/i_1_0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/i_1_1/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/i_1_4/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/i_1_0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/i_1_1/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/i_1_4/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/i_1_0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/i_1_1/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/i_1_4/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:06 . Memory (MB): peak = 2093.668 ; gain = 821.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:02:12 . Memory (MB): peak = 2192.176 ; gain = 919.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:19 . Memory (MB): peak = 2263.793 ; gain = 991.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:06 ; elapsed = 00:02:22 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:06 ; elapsed = 00:02:22 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |CARRY8            |   113|
+|2     |DSP48E1           |     8|
+|3     |DSP_ALU           |    27|
+|4     |DSP_ALU_1         |     2|
+|5     |DSP_A_B_DATA      |     8|
+|6     |DSP_A_B_DATA_1    |     2|
+|7     |DSP_A_B_DATA_2    |     4|
+|8     |DSP_A_B_DATA_3    |     3|
+|9     |DSP_A_B_DATA_4    |     3|
+|10    |DSP_A_B_DATA_5    |     1|
+|11    |DSP_A_B_DATA_6    |     4|
+|12    |DSP_A_B_DATA_7    |     4|
+|13    |DSP_C_DATA        |    12|
+|14    |DSP_C_DATA_1      |    17|
+|15    |DSP_MULTIPLIER    |    26|
+|16    |DSP_MULTIPLIER_1  |     1|
+|17    |DSP_MULTIPLIER_2  |     2|
+|18    |DSP_M_DATA        |    29|
+|19    |DSP_OUTPUT        |    14|
+|20    |DSP_OUTPUT_1      |     7|
+|21    |DSP_OUTPUT_2      |     4|
+|22    |DSP_OUTPUT_3      |     2|
+|23    |DSP_OUTPUT_4      |     2|
+|24    |DSP_PREADD        |    29|
+|25    |DSP_PREADD_DATA   |    14|
+|26    |DSP_PREADD_DATA_1 |     1|
+|27    |DSP_PREADD_DATA_2 |    12|
+|28    |DSP_PREADD_DATA_3 |     2|
+|29    |LUT1              |   203|
+|30    |LUT2              |   677|
+|31    |LUT3              |  1293|
+|32    |LUT4              |   949|
+|33    |LUT5              |   863|
+|34    |LUT6              |  3103|
+|35    |MUXCY             |   884|
+|36    |MUXF7             |    80|
+|37    |MUXF8             |     8|
+|38    |RAMB18E2          |     9|
+|39    |SRL16E            |    14|
+|40    |XORCY             |   582|
+|41    |FDE               |    10|
+|42    |FDRE              |  4275|
+|43    |FDSE              |   105|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 491 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:02:11 . Memory (MB): peak = 2267.586 ; gain = 845.445
+Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:02:24 . Memory (MB): peak = 2267.586 ; gain = 995.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1714 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2294.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 179 instances were transformed.
+  (CARRY4) => CARRY8: 132 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 8 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 29 instances
+  FDE => FDRE: 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+512 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:44 . Memory (MB): peak = 2294.836 ; gain = 1899.684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2294.836 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = ff6ff01e28b33ae8
+INFO: [Coretcl 2-1174] Renamed 517 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2294.836 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/work/zynq/hls/hls_projects/sobel_edge/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  3 20:24:59 2020...

@@ -1,0 +1,444 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 349.328 ; gain = 56.715
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/zynq/hls/hls_projects/sobel_edge'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 392.254 ; gain = 42.801
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:21 . Memory (MB): peak = 407.535 ; gain = 15.281
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 132656 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1318.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (1#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:651]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1306]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (2#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1306]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_I4GRPB' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_I4GRPB' (3#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1BOGR4T' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1556]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1BOGR4T' (4#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1556]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1688]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (5#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (6#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (7#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1688]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (8#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:1265]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (9#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:651]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_2' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_vdma_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_2' (10#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_vdma_0_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'design_1_axi_vdma_0_2' has 67 connections declared, but only 64 given [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:328]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_1_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_vdma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_1_0' (11#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_axi_vdma_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_vdma_1' of module 'design_1_axi_vdma_1_0' has 67 connections declared, but only 60 given [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:393]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (12#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:454]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (13#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (14#1) [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (15#1) [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (16#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/.Xil/Vivado-167512-Automation-PC/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:569]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (17#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (18#1) [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_O7FAN0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1BOGR4T has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_I4GRPB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1CA5Z32 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1363.965 ; gain = 45.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1368.059 ; gain = 49.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1368.059 ; gain = 49.301
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2/design_1_axi_vdma_0_2_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_in_context.xdc] for cell 'design_1_i/axi_vdma_1'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_in_context.xdc] for cell 'design_1_i/axi_vdma_1'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1430.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1430.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1430.125 ; gain = 111.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1430.125 ; gain = 111.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_vdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_vdma_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/smartconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1430.125 ; gain = 111.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1430.125 ; gain = 111.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_axi_interconnect_0_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1430.125 ; gain = 111.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1989.379 ; gain = 670.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1989.441 ; gain = 670.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2000.281 ; gain = 681.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_xbar_0              |         1|
+|2     |design_1_auto_ds_0           |         1|
+|3     |design_1_auto_pc_0           |         1|
+|4     |design_1_axi_intc_0_0        |         1|
+|5     |design_1_axi_vdma_0_2        |         1|
+|6     |design_1_axi_vdma_1_0        |         1|
+|7     |design_1_rst_ps8_0_100M_0    |         1|
+|8     |design_1_smartconnect_0_0    |         1|
+|9     |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |design_1_auto_ds_0           |     1|
+|2     |design_1_auto_pc_0           |     1|
+|3     |design_1_axi_intc_0_0        |     1|
+|4     |design_1_axi_vdma_0_2        |     1|
+|5     |design_1_axi_vdma_1_0        |     1|
+|6     |design_1_rst_ps8_0_100M_0    |     1|
+|7     |design_1_smartconnect_0_0    |     1|
+|8     |design_1_xbar_0              |     1|
+|9     |design_1_zynq_ultra_ps_e_0_0 |     1|
++------+-----------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------------------+------+
+|      |Instance               |Module                        |Cells |
++------+-----------------------+------------------------------+------+
+|1     |top                    |                              |  2484|
+|2     |  design_1_i           |design_1                      |  2484|
+|3     |    axi_interconnect_0 |design_1_axi_interconnect_0_0 |   941|
+|4     |      s00_couplers     |s00_couplers_imp_O7FAN0       |   519|
+|5     |    xlconcat_0         |design_1_xlconcat_0_0         |     0|
++------+-----------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2016.074 ; gain = 635.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2016.074 ; gain = 697.316
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2051.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 2056.664 ; gain = 1649.129
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2056.664 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/work/zynq/hls/base_projects/vdma_pass_thrugh/vdma_pass_thrugh.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 29 17:54:05 2020...
