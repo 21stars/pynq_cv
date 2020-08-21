@@ -64,7 +64,7 @@ In this project, there is no image/video processing kernel between two VDMAs.
 1. Create Vivado Project
     - Set board as Ultra96
 2. Create Block Design
-![Block Design](used_images/vdma_pass_thru_bd.png)
+![Block Design](/used_images/vdma_pass_thru_bd.png)
     - Processing System: Apply board presets, Enable M_AXI_HPM0_FPD, S_AXI_HPC0_FPD
     - AXI Video Direct Memory Access x 2
     ![VDMA-1](/used_images/vdma_pass_thru_vdma.png)
