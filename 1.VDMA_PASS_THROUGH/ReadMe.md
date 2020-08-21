@@ -64,11 +64,11 @@ In this project, there is no image/video processing kernel between two VDMAs.
 1. Create Vivado Project
     - Set board as Ultra96
 2. Create Block Design
-![Block Design](/used_images/vdma_pass_thru_bd.png)
+![Block Design](/used_images/vdma_pass_thru_bd.PNG)
     - Processing System: Apply board presets, Enable M_AXI_HPM0_FPD, S_AXI_HPC0_FPD
     - AXI Video Direct Memory Access x 2
-    ![VDMA-1](/used_images/vdma_pass_thru_vdma.png)
-    ![VDMA-2](/used_images/vdma_pass_thru_vdma2.png)
+    ![VDMA-1](/used_images/vdma_pass_thru_vdma.PNG)
+    ![VDMA-2](/used_images/vdma_pass_thru_vdma2.PNG)
     Frame Buffers: Configure how many frames store in external DRAM(Not important for this project)
     Stream Data Width: At least 24, since we're sending RGB 24 bit datawidth pixel data.
     Read/Write Burst Size: This matters for bandwidth. For HD resolution images, 32bit width yields throughput of 96 fps, 64bit width yields 192 fps.
