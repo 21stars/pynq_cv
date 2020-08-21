@@ -30,7 +30,7 @@ If the master waits for the slave's READY to assert VALID, it may wait forever.
 
 ## VDMA
 
-![AXI_VDMA](/used_images/axi_vdma.png)
+![AXI_VDMA](/used_images/axi_vdma.PNG)
 
 Video Direct Memory Access[(VDMA)](https://www.xilinx.com/support/documentation/ip_documentation/axi_vdma/v6_3/pg020_axi_vdma.pdf "AXI VDMA") IPs were used to read/store image frame from/to external DDR Memory.
 
