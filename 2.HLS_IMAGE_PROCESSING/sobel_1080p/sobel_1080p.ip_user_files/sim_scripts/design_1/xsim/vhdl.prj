@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_axi_vdma_0_2/sim/design_1_axi_vdma_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_vdma_1_0/sim/design_1_axi_vdma_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_48ac_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_100M_0/sim/design_1_rst_ps8_0_100M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_intc_0_0/sim/design_1_axi_intc_0_0.vhd" \
+"../../../../sobel_base.srcs/sources_1/bd/design_1/ipshared/e1d0/hdl/ip/sobel_accel_ap_dadd_3_full_dsp_64.vhd" \
+"../../../../sobel_base.srcs/sources_1/bd/design_1/ipshared/e1d0/hdl/ip/sobel_accel_ap_dmul_3_max_dsp_64.vhd" \
+"../../../../sobel_base.srcs/sources_1/bd/design_1/ipshared/e1d0/hdl/ip/sobel_accel_ap_sitodp_2_no_dsp_32.vhd" \
+"../../../../sobel_base.srcs/sources_1/bd/design_1/ipshared/e1d0/hdl/ip/sobel_accel_ap_uitodp_2_no_dsp_32.vhd" \
+"../../../bd/design_1/ip/design_1_sobel_accel_0_2/sim/design_1_sobel_accel_0_2.vhd" \
+
+nosort

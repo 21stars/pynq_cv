@@ -14,16 +14,6 @@ System requirements
 - And of course an [Ultra96](http://zedboard.org/product/ultra96 "Ultra96") --> Ultra96v1 is fine if you specify your board as Ultra96v1 in Vivado Project and prepare PYNQ image of Ultra96v1
 - [Ultra96 Board File](https://github.com/Avnet/bdf "Ultra96 Board File") You should check which version your Ultra96 is
 
-## WHY PYNQ?
-
-The [PYNQ Framework](http://www.pynq.io/board.html "PYNQ") provides
-
-- Several Device Drivders
-- Python Environment
-- APIs for interfacing Processor and FPGA
-
-Using PYNQ framework can increase productivity
-
 ### So What's Inside
 
 - [VDMA Pass Through](1.VDMA_PASS_THROUGH "VDMA PASS THROUGH")

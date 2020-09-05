@@ -1,0 +1,692 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Aug 21 21:47:19 2020
+| Host         : DESKTOP-115548F running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 130
++-----------+----------+---------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                         | Violations |
++-----------+----------+---------------------------------------------------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining                                                    | 41         |
+| DPOP-3    | Warning  | PREG Output pipelining                                              | 26         |
+| DPOP-4    | Warning  | MREG Output pipelining                                              | 23         |
+| AVAL-155  | Advisory | enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 22         |
+| AVAL-156  | Advisory | enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND    | 10         |
+| REQP-1934 | Advisory | RAMB18E2_nochange_collision_advisory                                | 4          |
+| REQP-1935 | Advisory | RAMB36E2_nochange_collision_advisory                                | 4          |
++-----------+----------+---------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#11 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#12 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#13 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#14 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#15 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#16 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#17 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#18 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#19 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#20 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#21 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#22 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#23 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#24 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#25 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#26 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#27 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#28 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#29 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#30 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#31 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#32 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#33 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#34 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#35 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/ret_V_reg_381_reg input design_1_i/sobel_accel_0/inst/CvtColor_1_U0/ret_V_reg_381_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#36 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mbkb_U19/sobel_accel_mac_mbkb_DSP48_0_U/m input design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mbkb_U19/sobel_accel_mac_mbkb_DSP48_0_U/m/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#37 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p input design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#38 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p input design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#39 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p input design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#40 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_mqcK_U61/sobel_accel_mac_mqcK_DSP48_8_U/p input design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_mqcK_U61/sobel_accel_mac_mqcK_DSP48_8_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#41 Warning
+Input pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_mqcK_U61/sobel_accel_mac_mqcK_DSP48_8_U/p input design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_mqcK_U61/sobel_accel_mac_mqcK_DSP48_8_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#6 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#7 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#8 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#9 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#10 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#11 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#12 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#13 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#14 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#15 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#16 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#17 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#18 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#19 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#20 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#21 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p output design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#22 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p output design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#23 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mkbM_U39/sobel_accel_mac_mkbM_DSP48_5_U/p output design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mkbM_U39/sobel_accel_mac_mkbM_DSP48_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#24 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p output design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#25 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p output design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#26 Warning
+PREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p output design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#9 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#10 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#11 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#12 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#13 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#14 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#15 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#16 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP multiplier stage design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#17 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/ret_V_reg_381_reg multiplier stage design_1_i/sobel_accel_0/inst/CvtColor_1_U0/ret_V_reg_381_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#18 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p multiplier stage design_1_i/sobel_accel_0/inst/CvtColor_1_U0/sobel_accel_mac_mdEe_U21/sobel_accel_mac_mdEe_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#19 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p multiplier stage design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_ama_aibs_U37/sobel_accel_ama_aibs_DSP48_3_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#20 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mkbM_U39/sobel_accel_mac_mkbM_DSP48_5_U/p multiplier stage design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mkbM_U39/sobel_accel_mac_mkbM_DSP48_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#21 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p multiplier stage design_1_i/sobel_accel_0/inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/sobel_accel_mac_mlbW_U40/sobel_accel_mac_mlbW_DSP48_6_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#22 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p multiplier stage design_1_i/sobel_accel_0/inst/Sobel_1_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#23 Warning
+MREG Output pipelining  
+DSP design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p multiplier stage design_1_i/sobel_accel_0/inst/Sobel_U0/grp_Filter2D_fu_52/sobel_accel_mac_msc4_U63/sobel_accel_mac_msc4_DSP48_10_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+AVAL-155#1 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#2 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#3 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#4 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#5 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#6 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#7 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#8 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#9 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#10 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#11 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#12 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#13 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#14 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#15 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#16 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#17 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#18 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#19 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#20 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#21 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#22 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#1 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#2 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#3 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U87/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#4 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#5 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#6 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dadd_udo_U88/sobel_accel_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#7 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#8 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U89/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#9 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E2_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP_SIMD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#10 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/sobel_accel_0/inst/AddWeighted_U0/sobel_accel_dmul_vdy_U90/sobel_accel_ap_dmul_3_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-1934#1 Advisory
+RAMB18E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1934#2 Advisory
+RAMB18E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1934#3 Advisory
+RAMB18E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1934#4 Advisory
+RAMB18E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#1 Advisory
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#2 Advisory
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#3 Advisory
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#4 Advisory
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (design_1_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

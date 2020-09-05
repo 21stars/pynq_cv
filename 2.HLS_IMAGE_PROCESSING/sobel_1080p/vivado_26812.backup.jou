@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug 21 21:41:48 2020
+# Process ID: 26812
+# Current directory: C:/work/zynq/hls/base_projects/sobel_1080p
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13408 C:\work\zynq\hls\base_projects\sobel_1080p\sobel_1080p.xpr
+# Log file: C:/work/zynq/hls/base_projects/sobel_1080p/vivado.log
+# Journal file: C:/work/zynq/hls/base_projects/sobel_1080p\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/zynq/hls/base_projects/sobel_1080p/sobel_1080p.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/work/zynq/hls/base_projects/sobel_1080p/sobel_1080p.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

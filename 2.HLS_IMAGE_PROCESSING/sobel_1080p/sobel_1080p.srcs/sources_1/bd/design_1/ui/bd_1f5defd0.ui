@@ -1,0 +1,44 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 6 -x 2200 -y 520 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 7 -x 2680 -y 190 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 2 -x 550 -y 490 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1730 -y 490 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 7 -x 2680 -y 730 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -x 200 -y 780 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 8 -x 2990 -y 230 -defaultsOSRD
+preplace inst axi_vdma_1 -pg 1 -lvl 4 -x 1380 -y 520 -defaultsOSRD -resize 300 216
+preplace inst sobel_accel_0 -pg 1 -lvl 3 -x 980 -y 480 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 8 20 620 370 620 750 570 1210 660 1580 610 1870 360 2530 400 2850
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 7 30 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 2520
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 7 380 690 730 590 1200 670 1590 600 1880J 430 2520 390 2860J
+preplace netloc axi_vdma_0_mm2s_introut 1 2 5 740 690 NJ 690 NJ 690 NJ 690 NJ
+preplace netloc axi_vdma_0_s2mm_introut 1 2 5 720 710 NJ 710 NJ 710 NJ 710 NJ
+preplace netloc axi_intc_0_irq 1 5 4 1890 610 NJ 610 NJ 610 3110
+preplace netloc xlconcat_0_dout 1 7 1 2870 260n
+preplace netloc axi_vdma_1_mm2s_introut 1 4 3 1560 730 NJ 730 NJ
+preplace netloc axi_vdma_1_s2mm_introut 1 4 3 1550 750 NJ 750 NJ
+preplace netloc sobel_accel_0_interrupt 1 3 4 1190 770 NJ 770 NJ 770 NJ
+preplace netloc smartconnect_0_M00_AXI 1 5 1 N 490
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 6 1 2510 70n
+preplace netloc axi_interconnect_0_M00_AXI 1 1 7 370 10 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 2830
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 3 760J 390 NJ 390 1560
+preplace netloc axi_interconnect_0_M02_AXI 1 7 1 N 200
+preplace netloc sobel_accel_0_OUTPUT_STREAM 1 3 1 N 470
+preplace netloc axi_interconnect_0_M03_AXI 1 2 6 770 380 NJ 380 NJ 380 NJ 380 NJ 380 2830
+preplace netloc axi_vdma_1_M_AXI_S2MM 1 4 1 1550 480n
+preplace netloc axi_interconnect_0_M01_AXI 1 3 5 1190 370 NJ 370 NJ 370 NJ 370 2840
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 3 760J 650 NJ 650 1570
+preplace netloc axi_vdma_1_M_AXI_MM2S 1 4 1 1560 460n
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 2 1 N 470
+levelinfo -pg 1 0 200 550 980 1380 1730 2200 2680 2990 3130
+pagesize -pg 1 -db -bbox -sgen 0 0 3130 880
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"20",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

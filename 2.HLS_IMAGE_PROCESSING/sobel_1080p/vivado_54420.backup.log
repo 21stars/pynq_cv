@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 29 11:35:19 2020
+# Process ID: 54420
+# Current directory: C:/work/zynq/hls/base_projects/sobel_1080p
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54888 C:\work\zynq\hls\base_projects\sobel_1080p\sobel_1080p.xpr
+# Log file: C:/work/zynq/hls/base_projects/sobel_1080p/vivado.log
+# Journal file: C:/work/zynq/hls/base_projects/sobel_1080p\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/work/zynq/hls/base_projects/sobel_1080p/sobel_1080p.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project C:/work/zynq/hls/base_projects/sobel_base_4k/sobel_base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/zynq/hls/base_projects/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/work/zynq/hls/hls_projects/sobel_edge_4k'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 930.391 ; gain = 164.758
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 29 14:40:12 2020...
