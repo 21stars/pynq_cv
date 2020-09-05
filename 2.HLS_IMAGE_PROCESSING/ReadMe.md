@@ -48,6 +48,7 @@ The dataflow pragma creates a channel FIFO buffer between the stages to make it 
 ## Vivado High Level Synthesis
 
 1. Create Vivado High-Level Synthesis project
+
 Do not specify source file, testbench file - will be added later
 Solution name: solution1
 Clock Period: 10
@@ -108,6 +109,7 @@ Part: Select Board Ultra96v2 board
         typedef hls::Mat<MAX_HEIGHT, MAX_WIDTH, HLS_16S> GRAY_SIGNED_IMG;
 
 - tb_sobel.cpp
+
         #include "sobel.h"
         #include "hls_opencv.h"
         int main(){
