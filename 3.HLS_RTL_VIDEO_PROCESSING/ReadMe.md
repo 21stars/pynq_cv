@@ -1,12 +1,11 @@
-# HLS IMAGE PROCESSING
+# HLS RTL VIDEO PROCESSING
 
-In this project, read an image frame and do image processing using HLS, PYNQ
-You can read written paper [here](https://ieeexplore.ieee.org/document/9277085 "Accelerating Image Processing on FPGAs using HLS and PYNQ") "Accelerating Image Processing on FPGAs using HLS and PYNQ", ICCE-Asia 2020
+Comparison between RTL and HLS version processing kernel
+You can read written paper [here](https://ieeexplore.ieee.org/document/9276803 "Comparison Between HLS and HDL Image Processing in FPGAs") "Comparison Between HLS and HDL Image Processing in FPGAs", ICCE-Asia 2020
 ![Sobel Operator](/used_images/sobel_edge.png)
 
 ## So What's Inside
 
-- RTL version IP: []
 - HLS Project: [sobel_edge](/2.HLS_IMAGE_PROCESSING/sobel_edge "HLS Project")
 - Vivado Project: [sobel_1080p](/2.HLS_IMAGE_PROCESSING/sobel_1080p "Vivado Project")
 - Prebuilt Base Image: [base](/2.HLS_IMAGE_PROCESSING/base "Base")

@@ -20,12 +20,12 @@ System requirements
   - Vivado Project
   - Jupyter Notebook
   
-- [HLS Image Processing]()
+- [HLS Image Processing](2.HLS_IMAGE_PROCESSING "HLS IMAGE PROCESSING")
   - Sobel Operator HLS Project
   - Vivado Project
   - Jupyter Notebook
 
-- [HLS / RTL Video Processing]()
+- [HLS / RTL Video Processing](3.HLS_RTL_VIDEO_PROCESSING "HLS RTL VIDEO PROCESSING")
   - Sobel Operator AXI4 Video Stream RTL IP
   - Vivado Project
   - Python Script
