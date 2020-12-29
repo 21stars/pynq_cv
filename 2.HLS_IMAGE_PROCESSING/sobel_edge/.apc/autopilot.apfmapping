@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="sobel_operator.cpp" path="C:\work\zynq\hls\hls_projects\sobel_edge\src\sobel_operator.cpp"/>
-    <originFiles name="sobel_edge.h" path="C:\work\zynq\hls\hls_projects\sobel_edge\src\sobel_edge.h"/>
+    <originFiles name="sobel.cpp" path="C:\work\GitHub\pynq_cv\2.HLS_IMAGE_PROCESSING\sobel_edge\src\sobel.cpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_sobel.cpp" path="C:\work\zynq\hls\hls_projects\sobel_edge\src\tb_sobel.cpp"/>
+    <originFiles name="tb_sobel.cpp" path="C:\work\GitHub\pynq_cv\2.HLS_IMAGE_PROCESSING\sobel_edge\src\tb_sobel.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

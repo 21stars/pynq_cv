@@ -2,8 +2,7 @@
 <project xmlns="com.autoesl.autopilot.project" name="sobel_edge" top="sobel_accel">
   <files>
     <file name="../src/tb_sobel.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" blackbox="false" csimflags=" -Wno-unknown-pragmas"/>
-    <file name="sobel_edge/src/sobel_operator.cpp" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
-    <file name="sobel_edge/src/sobel_edge.h" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
+    <file name="sobel_edge/src/sobel.cpp" sc="0" tb="false" cflags="" blackbox="false"/>
   </files>
   <solutions>
     <solution name="solution1" status="active"/>

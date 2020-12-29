@@ -5,8 +5,7 @@
 ############################################################
 open_project sobel_edge
 set_top sobel_accel
-add_files sobel_edge/src/sobel_operator.cpp
-add_files sobel_edge/src/sobel_edge.h
+add_files sobel_edge/src/sobel.cpp
 add_files -tb sobel_edge/src/tb_sobel.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xczu3eg-sbva484-1-e} -tool vivado

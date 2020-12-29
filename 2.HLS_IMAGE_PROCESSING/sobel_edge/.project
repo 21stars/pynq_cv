@@ -29,47 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/.apc/.src</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/.apc/.tb</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/solution1/.tcls</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/sobel_edge.h</name>
+			<name>source/sobel.cpp</name>
 			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/src/sobel_edge.h</location>
-		</link>
-		<link>
-			<name>source/sobel_operator.cpp</name>
-			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/src/sobel_operator.cpp</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/src/sobel.cpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_sobel.cpp</name>
 			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/src/tb_sobel.cpp</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/src/tb_sobel.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/solution1/solution1.directive</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/solution1/directives.tcl</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/work/zynq/hls/hls_projects/sobel_edge/solution1/script.tcl</location>
+			<location>C:/work/GitHub/pynq_cv/2.HLS_IMAGE_PROCESSING/sobel_edge/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
