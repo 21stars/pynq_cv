@@ -10,8 +10,8 @@ You can read written paper [here](https://ieeexplore.ieee.org/document/9276803 "
 - Vivado Project: [sobel_1080p](/2.HLS_IMAGE_PROCESSING/sobel_1080p "Vivado Project")
 - Prebuilt Base Image: [base](/2.HLS_IMAGE_PROCESSING/base "Base")
 - Image samples: [data](/2.HLS_IMAGE_PROCESSING/data "Data")
-- SW version Jupyter Notebook: [sobel_sw.ipynb](/2.HLS_IMAGE_PROCESSING/sobel_sw.ipynb "Jupyter Notebook")
-- HW version Jupyter Notebook: [sobel_hw.ipynb](/2.HLS_IMAGE_PROCESSING/sobel_hw.ipynb "Jupyter Notebook")
+- Using HLS version IP Python Code: [sobel_sw.ipynb](/2.HLS_IMAGE_PROCESSING/sobel_sw.ipynb "Jupyter Notebook")
+- Using RTL version IP Python Code: [sobel_hw.ipynb](/2.HLS_IMAGE_PROCESSING/sobel_hw.ipynb "Jupyter Notebook")
 
 ## High Level Synthesis
 
