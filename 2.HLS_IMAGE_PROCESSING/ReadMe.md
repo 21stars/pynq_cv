@@ -1,6 +1,7 @@
 # HLS IMAGE PROCESSING
 
 In this project, read an image frame and do image processing using HLS, PYNQ
+
 You can read written paper [here](https://ieeexplore.ieee.org/document/9277085 "Accelerating Image Processing on FPGAs using HLS and PYNQ") "Accelerating Image Processing on FPGAs using HLS and PYNQ", ICCE-Asia 2020
 ![Sobel Operator](/used_images/sobel_edge.png)
 
